@@ -2,9 +2,6 @@
 
 A powerful tool to simulate shadow geometries from 2D building footprints (as GeoJSON) using sun position (via direct angles or date-time). Supports elevation-based shadow generation and handles `Polygon` and `MultiPolygon` types.
 
-![npm](https://img.shields.io/npm/v/geojson-shadow-generator?color=green)
-![license](https://img.shields.io/npm/l/geojson-shadow-generator)
-
 ## Installation
 
 ```bash
