@@ -1,6 +1,6 @@
 {
   "name": "geojson-shadow-generator",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "This module aims to generate shadow geometries as GeoJSON by using properties from GeoJSON files",
   "main": "index.js",
   "scripts": {

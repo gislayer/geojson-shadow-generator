@@ -1,3 +1,6 @@
+![Shadow Generator Demo](https://cdn.jsdelivr.net/npm/geojson-shadow-generator/example/shadow.gif)
+
+
 # GeoJSON Shadow Generator
 
 A powerful tool to simulate shadow geometries from 2D building footprints (as GeoJSON) using sun position (via direct angles or date-time). Supports elevation-based shadow generation and handles `Polygon` and `MultiPolygon` types.
