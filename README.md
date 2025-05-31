@@ -14,6 +14,12 @@ or with yarn:
 yarn add geojson-shadow-generator
 ```
 
+or with vanillajs
+
+```bash
+https://cdn.jsdelivr.net/npm/geojson-shadow-generator/bundle.js
+```
+
 ## ✨ Features
 
 * Calculates shadow geometries based on:
