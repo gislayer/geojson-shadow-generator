@@ -1,0 +1,37 @@
+{
+  "name": "geojson-shadow-generator",
+  "version": "1.0.0",
+  "description": "This module aims to generate shadow geometries as GeoJSON by using properties from GeoJSON files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gislayer/geojson-shadow-generator.git"
+  },
+  "keywords": [
+    "geojson",
+    "shadow",
+    "generator",
+    "geometry",
+    "gis"
+  ],
+  "author": "Ali Kilic",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gislayer/geojson-shadow-generator/issues"
+  },
+  "homepage": "https://github.com/gislayer/geojson-shadow-generator#readme",
+  "dependencies": {
+    "@turf/center": "^7.2.0",
+    "@turf/convex": "^7.2.0",
+    "@turf/difference": "^7.2.0",
+    "@turf/helpers": "^7.2.0",
+    "@turf/union": "^7.2.0",
+    "geojson-validation": "^1.0.2",
+    "proj4": "^2.17.0",
+    "suncalc": "^1.9.0"
+  }
+}
