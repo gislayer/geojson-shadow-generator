@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+</head>
+<style>
+  #map{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .controls{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fffFFf50;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  .controls input{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 90%;
+  }
+  .controls span{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #fffFFf50;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+    color:#8bc34a;
+  }
+</style>
+<body>
+  <div id="map"></div>
+  <div class="controls">
+    <div style="font-size: 1.2rem; font-family: 'Poppins', sans-serif;">Shadow Controller</div>
+    <input type="date" id="date">
+    <input type="range" id="time" min="8" max="18" value="9" step="0.1">
+    <span id="timeDisplay">09:00</span>
+  </div>
+</body>
+</html>
+<script src="mapbox-shadow-bundle.js"></script>
+<script src="data.js"></script>
+<script src="index.js"></script>
