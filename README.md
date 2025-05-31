@@ -5,7 +5,7 @@ A powerful tool to simulate shadow geometries from 2D building footprints (as Ge
 ![npm](https://img.shields.io/npm/v/geojson-shadow-generator?color=green)
 ![license](https://img.shields.io/npm/l/geojson-shadow-generator)
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install geojson-shadow-generator
@@ -30,7 +30,7 @@ yarn add geojson-shadow-generator
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Import
 
@@ -61,7 +61,7 @@ const shadows2 = generator.getShadowGeometries({
 
 ---
 
-## 🔧 Constructor
+## Constructor
 
 ```ts
 new GeoJSONShadowGenerator(geojson: FeatureCollection | Feature, elevationPropertyName?: string)
@@ -89,7 +89,7 @@ Generates shadow geometries.
 
 ---
 
-## 📄 GeoJSON Requirements
+## GeoJSON Requirements
 
 * Input must be a valid **GeoJSON Feature** or **FeatureCollection**.
 * Geometry type must be **Polygon** or **MultiPolygon**.
@@ -120,7 +120,7 @@ Example of a valid feature:
 
 ---
 
-## 🧠 Behind the Scenes
+## Behind the Scenes
 
 * Uses `suncalc` to compute sun azimuth and elevation from date and latitude/longitude.
 * Projects coordinates to EPSG:3857 to perform shadow translation in meters.
@@ -130,7 +130,7 @@ Example of a valid feature:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Example test case:
 
@@ -151,13 +151,13 @@ const result2 = test.getShadowGeometries({
 
 ---
 
-## 📤 Output
+## Output
 
 The returned result is a GeoJSON `FeatureCollection` that represents the **shadow geometries** of the input features.
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 This package uses the following libraries:
 
@@ -172,16 +172,18 @@ This package uses the following libraries:
 
 ---
 
-## 🛡️ License
+## License
 
-MIT © 2025 - Your Name
+MIT © 2025 - Ali Kilic | https://akilic.com
 
 ---
 
-## 💡 Tip
+## Tip
 
 You can visualize the shadow outputs using:
 
 * [geojson.io](http://geojson.io/)
 * [Kepler.gl](https://kepler.gl/)
+* [openlayers.org](https://openlayers.org)
+* [gislayer.com](https://gislayer.com)
 * Or web map libraries like Leaflet, Mapbox GL, or OpenLayers.

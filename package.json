@@ -15,10 +15,14 @@
     "shadow",
     "generator",
     "geometry",
-    "gis"
+    "gis",
+    "sun",
+    "solar",
+    "turf",
+    "suncalc"
   ],
   "author": "Ali Kilic",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/gislayer/geojson-shadow-generator/issues"
